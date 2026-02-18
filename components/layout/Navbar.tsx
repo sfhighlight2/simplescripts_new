@@ -6,7 +6,6 @@ const NAV_ITEMS = [
   { label: 'Weight Loss', href: '#' },
   { label: 'Sexual Health', href: '#' },
   { label: 'Hair', href: '#' },
-  { label: 'Daily Health', href: '#' },
   { label: 'Top Products', href: '#' },
   { label: 'What We Treat', href: '#' },
 ];
@@ -167,9 +166,9 @@ const Navbar: React.FC = () => {
       </div>
 
       <nav className="bg-white border-b border-gray-100 relative">
-        <div className="max-w-[1400px] mx-auto px-6 h-16 md:h-20 flex items-center">
+        <div className="max-w-[1400px] mx-auto px-6 h-16 md:h-20 flex items-center justify-between">
           {/* Logo */}
-          <div className="flex-shrink-0 flex items-center mr-8 lg:mr-12">
+          <div className="flex-1 flex items-center">
             <a href="#" className="text-3xl font-bold tracking-tighter hover:opacity-80 transition-opacity pb-1">
               Simple Scripts
             </a>
@@ -190,7 +189,7 @@ const Navbar: React.FC = () => {
           </div>
 
           {/* Desktop Actions */}
-          <div className="hidden lg:flex items-center space-x-6 ml-auto">
+          <div className="flex-1 hidden lg:flex items-center justify-end">
             <button className="p-2 hover:bg-gray-100 rounded-full transition-colors">
               <User size={20} className="text-gray-600" />
             </button>

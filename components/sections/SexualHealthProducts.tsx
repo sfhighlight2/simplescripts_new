@@ -8,7 +8,7 @@ const PRODUCTS: Product[] = [
     title: 'Simple Scripts Sparks',
     subtitle: 'Works in 15 minutes on average, lasts for up to 36 hours*',
     badge: 'Best seller',
-    image: 'https://images.unsplash.com/photo-1635581898165-4f056c7d3c33?auto=format&fit=crop&q=80&w=400',
+    image: 'https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?auto=format&fit=crop&q=80&w=400',
     primaryAction: 'Get started',
     secondaryAction: 'Learn more'
   },
@@ -16,7 +16,7 @@ const PRODUCTS: Product[] = [
     id: '2',
     title: 'Daily Rise Gummies',
     subtitle: 'Daily tadalafil gummy works continuously, no planning required',
-    image: 'https://images.unsplash.com/photo-1624360533088-75618f0a0e5b?auto=format&fit=crop&q=80&w=400',
+    image: 'https://images.unsplash.com/photo-1616671276441-2f2c277b8bf6?auto=format&fit=crop&q=80&w=400',
     primaryAction: 'Get started',
     secondaryAction: 'Learn more'
   },
@@ -24,7 +24,7 @@ const PRODUCTS: Product[] = [
     id: '3',
     title: 'Generic of Viagra®',
     subtitle: 'Up to 99% cheaper than branded',
-    image: 'https://images.unsplash.com/photo-1550572017-edd951aa8f72?auto=format&fit=crop&q=80&w=400',
+    image: 'https://images.unsplash.com/photo-1626285861696-9f0bf5a49c6d?auto=format&fit=crop&q=80&w=400',
     primaryAction: 'Get started',
     secondaryAction: 'Learn more'
   },
@@ -32,7 +32,7 @@ const PRODUCTS: Product[] = [
     id: '4',
     title: 'Viagra® (sildenafil)',
     subtitle: 'Ready in up to 60 mins, lasts for 4 hours',
-    image: 'https://images.unsplash.com/photo-1550572017-4fcdbb560fa3?auto=format&fit=crop&q=80&w=400',
+    image: 'https://images.unsplash.com/photo-1471864190281-a93a3070b6de?auto=format&fit=crop&q=80&w=400',
     primaryAction: 'Get started',
     secondaryAction: 'Learn more'
   },
@@ -40,11 +40,12 @@ const PRODUCTS: Product[] = [
     id: '5',
     title: 'Generic of Cialis®',
     subtitle: 'Affordable alternative to branded',
-    image: 'https://images.unsplash.com/photo-1512069772995-ec65ed45afd0?auto=format&fit=crop&q=80&w=400',
+    image: 'https://images.unsplash.com/photo-1559757148-5c350d0d3c56?auto=format&fit=crop&q=80&w=400',
     primaryAction: 'Get started',
     secondaryAction: 'Learn more'
   }
 ];
+
 
 const SexualHealthProducts: React.FC = () => {
   return (
@@ -52,13 +53,12 @@ const SexualHealthProducts: React.FC = () => {
       <div className="flex overflow-x-auto pb-8 gap-6 snap-x snap-mandatory scrollbar-hide">
         {PRODUCTS.map((product) => (
           <div key={product.id} className="min-w-[280px] w-[280px] snap-start flex flex-col">
-            <div className="bg-[#F3F4F6] rounded-2xl p-6 aspect-square relative mb-4 flex items-center justify-center group overflow-hidden">
+            <div className="bg-[#F3F4F6] rounded-2xl aspect-square relative mb-4 group overflow-hidden">
               {product.badge && (
                 <div className="absolute top-4 left-4 bg-[#C28E79] text-white text-[10px] font-bold uppercase tracking-wider px-2 py-1 rounded-sm z-10">
                   {product.badge}
                 </div>
               )}
-              <img src={product.image} alt={product.title} className="w-full h-full object-cover mix-blend-multiply group-hover:scale-110 transition-transform duration-500" />
             </div>
 
             <h3 className="font-bold text-lg mb-1">{product.title}</h3>

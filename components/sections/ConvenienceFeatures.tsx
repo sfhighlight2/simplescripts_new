@@ -4,7 +4,7 @@ const ConvenienceFeatures: React.FC = () => {
   const features = [
     {
       title: "Message your provider 24/7",
-      image: "https://images.unsplash.com/photo-1512428559087-560fa0cec44e?auto=format&fit=crop&q=80&w=400",
+      image: "https://images.unsplash.com/photo-1576091160550-2173dba999ef?auto=format&fit=crop&q=80&w=400",
       description: "Unlimited messaging"
     },
     {
@@ -28,22 +28,22 @@ const ConvenienceFeatures: React.FC = () => {
     <section className="max-w-[1400px] mx-auto px-4 md:px-6 mb-24">
       <div className="mb-12">
         <h2 className="text-3xl md:text-4xl font-serif text-gray-900 leading-tight">
-          100% online,<br/>100% convenient
+          100% online,<br />100% convenient
         </h2>
       </div>
 
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
         {features.map((feature, idx) => (
           <div key={idx} className="flex flex-col group">
-             <div className="bg-[#F3F4F6] rounded-2xl overflow-hidden aspect-[3/4] mb-4 relative">
-                <img 
-                  src={feature.image} 
-                  alt={feature.title} 
-                  className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/10 to-transparent"></div>
-             </div>
-             <h3 className="font-semibold text-lg leading-snug">{feature.title}</h3>
+            <div className="bg-[#F3F4F6] rounded-2xl overflow-hidden aspect-[3/4] mb-4 relative">
+              <img
+                src={feature.image}
+                alt={feature.title}
+                className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/10 to-transparent"></div>
+            </div>
+            <h3 className="font-semibold text-lg leading-snug">{feature.title}</h3>
           </div>
         ))}
       </div>

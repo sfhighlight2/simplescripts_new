@@ -42,12 +42,12 @@ const SupplyInventory: React.FC = () => {
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
         {INVENTORY_ITEMS.map((item, idx) => (
           <div key={idx} className="flex flex-col">
-            <div className="bg-[#F9F7F2] rounded-2xl p-6 aspect-square relative mb-4 flex items-center justify-center overflow-hidden">
+            <div className="bg-[#F9F7F2] rounded-2xl aspect-square relative mb-4 overflow-hidden">
               <div className={`absolute top-4 left-4 ${item.statusColor} text-[10px] font-bold uppercase tracking-wider px-2 py-1 rounded-sm flex items-center gap-1 z-10`}>
                 <div className="w-1.5 h-1.5 rounded-full bg-current"></div>
                 {item.status}
               </div>
-              <img src={item.image} alt={item.name} className="w-full h-full object-cover mix-blend-multiply opacity-90" />
+              <img src={item.image} alt={item.name} className="absolute inset-0 w-full h-full object-cover" />
             </div>
 
             <h3 className="font-bold text-lg">{item.name}</h3>
